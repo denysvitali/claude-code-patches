@@ -1,5 +1,5 @@
 # Binary artifacts
-section2.bin
+*.bin
 
 # Backup files
 *.backup
@@ -34,3 +34,5 @@ logs/
 .env
 .env.local
 .env.*.local
+
+.claude/settings.local.json
