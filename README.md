@@ -139,27 +139,6 @@ source ~/.bashrc
 NODE_OPTIONS='-r /path/to/claude-code-cpu-patches.js' claude
 ```
 
-## Performance Metrics
-
-Based on analysis of the minified codebase:
-
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Terminal render (100x200) | 20ms | ~5ms | 4x faster |
-| String concat (10k ops) | O(n²) | O(n) | Eliminates thrashing |
-| Hash computation | 100% miss | ~60% hit | 2.5x faster |
-| Array lookups | O(n) | O(1) | Linear to constant |
-| Object.values() | 5+ enumerations | Cached | Near-zero overhead |
-| process.env access | 34+ lookups | O(1) cache | Instant access |
-| Array push spread | Stack risk | Safe loop | No overflow |
-| indexOf in loops | O(n) linear | O(1) Map | Constant time |
-| Deep property chains | 4+ lookups | Cached | Single access |
-| Object allocations | 50+ GC pressure | Pooled | Reduced GC |
-| JSON serialization | Repeated stringify | Cached | 5-10x faster |
-| Regex compilation | Recompile every call | Cached | Eliminates overhead |
-| Buffer allocations | GC pressure | Pooled | 50% GC reduction |
-| Async operations | Individual calls | Batched | 30% fewer event loop ticks |
-
 ## Files
 
 - **`patches.sh`** - Main patch script with multiple modes (runtime, binary, oneliners)
