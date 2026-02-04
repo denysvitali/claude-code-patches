@@ -2,7 +2,7 @@
 
 CPU optimization patches for Claude Code CLI v2.1.29 that reduce CPU usage through runtime patching.
 
-> ![NOTE]  
+> [!NOTE]  
 > This has been entirely vibe coded w/ Kimi K2.5 - but tested on my machine.
 > It's impressively good, but it might be placebo.  
 > Use at your own risk and tell me what you think!
