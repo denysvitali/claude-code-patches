@@ -2,6 +2,11 @@
 
 CPU optimization patches for Claude Code CLI v2.1.29 that reduce CPU usage through runtime patching.
 
+> ![NOTE]  
+> This has been entirely vibe coded w/ Kimi K2.5 - but tested on my machine.
+> It's impressively good, but it might be placebo.  
+> Use at your own risk and tell me what you think!
+
 ## Overview
 
 This project applies 15 targeted performance patches to the Claude Code CLI that address common CPU bottlenecks in the minified JavaScript runtime. These patches fix issues like:
