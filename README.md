@@ -1,4 +1,4 @@
-# claude-decompile
+# claude-code-patches
 
 CPU optimization patches for Claude Code CLI v2.1.29 that reduce CPU usage through runtime patching.
 
