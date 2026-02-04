@@ -1,0 +1,36 @@
+# Binary artifacts
+section2.bin
+
+# Backup files
+*.backup
+
+# Temporary directories
+tmp/
+.tmp/
+temp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node.js dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Logs
+*.log
+logs/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment files
+.env
+.env.local
+.env.*.local
