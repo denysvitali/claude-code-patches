@@ -208,8 +208,8 @@ const __maxCache = 100;  // Reduce from default 500
 - Your hardware, workflow, and usage patterns will affect results
 - This is not officially endorsed by Anthropic
 
-Use at your own risk. Always backup your Claude binary before applying any patches.
+Use at your own risk.
 
 ## License
 
-These patches are provided for educational and performance improvement purposes. No warranty provided. Use at your own risk.
+MIT
