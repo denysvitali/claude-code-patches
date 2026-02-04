@@ -21,8 +21,8 @@ This project applies 15 targeted performance patches to the Claude Code CLI that
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/claude-decompile.git
-cd claude-decompile
+git clone https://github.com/denysvitali/claude-code-patches.git
+cd claude-code-patches
 
 # Apply runtime patches (recommended)
 ./patches.sh runtime
